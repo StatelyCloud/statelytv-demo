@@ -1,0 +1,77 @@
+# StatelyTV Demo
+
+A hands-on teaching application demonstrating [StatelyDB](https://stately.cloud) concepts through a Netflix-style streaming platform. Explore channels, shows, and characters while learning how StatelyDB's elastic schema and access patterns work in practice.
+
+[![Build with Stately](https://gist.githubusercontent.com/ryan-stately/51a07a4b3123f5cb89c8b9a1f3edf214/raw/158cb441aa65d05dd1a75b85dffad2feeb473f6b/build-icon.svg)](https://console.stately.cloud/new?repo=https%3A%2F%2Fgithub.com%2FStatelyCloud%2Fnextjs-task-flow)
+
+## What You'll Learn
+
+This demo showcases key StatelyDB features:
+
+- **Elastic Schema**: See how StatelyDB's TypeScript-based schema (in `./schema/schema.ts`) defines data models with typed fields, UUIDs, and metadata
+- **Multiple Access Patterns**: Explore how items can be queried through different keyPaths (e.g., direct access via `/show-:showId` or hierarchical via `/channel-:channelId/show-:showId`)
+- **CRUD Operations**: Use the admin dashboard to create, read, update, and delete entities without writing code
+- **Hierarchical Relationships**: Understand parent-child relationships (Channel → Shows → Characters)
+- **Real-time Queries**: See how StatelyDB fetches data using different access patterns in a real application
+
+## Getting Started
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+2. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+3. Open [http://localhost:8300](http://localhost:8300) to see the app
+
+4. Bootstrap demo data when prompted (or visit `/admin/bootstrap`)
+
+## Exploring the Demo
+
+### 1. Explore the Schema (`./schema/schema.ts`)
+Start by examining the elastic schema to understand:
+- How `itemType` defines data models
+- How multiple keyPaths enable different query patterns
+- How fields are typed and how metadata is captured
+
+### 2. Use the Admin Dashboard (`/admin`)
+Experiment with CRUD operations to see StatelyDB in action:
+- Create channels, shows, and characters
+- Edit existing items and observe updates
+- Delete items to understand cascading relationships
+- View metadata (createdAt, updatedAt) on each entity
+
+### 3. Browse the UI
+Navigate the main interface to see how data is queried:
+- Browse channels on the home page
+- View shows within a channel (hierarchical access)
+- Explore characters within a show (nested relationships)
+
+### 4. Examine the Code
+Look at how the app interacts with StatelyDB:
+- Check `lib/actions.ts` for data fetching patterns
+- See how keyPaths are used for different query scenarios
+- Understand how StatelyDB's client library is integrated
+
+### 5. Experiment and Reset
+Try different scenarios:
+- Create your own data structure
+- Test edge cases (empty channels, multiple characters)
+- Use the "Reset Data" button in admin to start fresh anytime
+
+## Key Files
+
+- `schema/schema.ts` - StatelyDB elastic schema definition
+- `lib/actions.ts` - Server actions for StatelyDB operations
+- `app/admin/page.tsx` - Admin dashboard for CRUD operations
+- `app/page.tsx` - Main browsing interface
+
+## Learn More
+
+- [StatelyDB Documentation](https://docs.stately.cloud)
+- [StatelyDB Schema Guide](https://docs.stately.cloud/schema)
+- [Next.js Documentation](https://nextjs.org/docs)
