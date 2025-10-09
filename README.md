@@ -17,25 +17,26 @@ This demo showcases key StatelyDB features:
 ## Getting Started
 
 1. Clone this Repo:
-   ```bash setup Clone the Repo
-   git clone https://github.com/StatelyCloud/statelytv-demo
-   cd statelytv-demo
-   ```
+```bash setup Clone the Repo
+git clone https://github.com/StatelyCloud/statelytv-demo
+cd statelytv-demo
+```
 
 2. Install dependencies & Login:
-   ```bash setup Install Dependencies & Login
-   npm install
-   npm run login
-   ```
+```bash setup Install Dependencies & Login
+npm install
+npm run login
+```
+
 3. Generate the SDK
-   ```bash setup Generate the SDK
-   npm run generate -- --language typescript --schema-id $SCHEMA_ID ./generated
-   ```
+```bash setup Generate the SDK
+npm run generate -- --language typescript --schema-id $SCHEMA_ID ./generated
+```
 
 4. Run the development server:
-   ```bash setup Run the Application
-   npm run dev
-   ```
+```bash setup Run the Application
+npm run dev
+```
 
 5. Open [http://localhost:8300](http://localhost:8300) to see the app
 
