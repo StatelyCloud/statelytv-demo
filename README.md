@@ -30,7 +30,7 @@ npm run login
 
 3. Generate the SDK
 ```bash setup Generate the SDK
-npm run generate -- --language typescript --schema-id $SCHEMA_ID ./generated
+npm run generate -- --language typescript --schema-id $SCHEMA_ID ./lib/schema
 ```
 
 4. Run the development server:
