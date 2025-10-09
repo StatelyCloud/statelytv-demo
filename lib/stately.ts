@@ -11,5 +11,5 @@ if (!process.env.STATELY_STORE_ID) {
 export const statelyClient = createClient({
   storeId: BigInt(process.env.STATELY_STORE_ID),
   transport: nodeTransport,
-  region: "us-west-2"
+  region: "us-east-1"
 });
