@@ -16,6 +16,8 @@ This demo showcases key StatelyDB features:
 
 ## Getting Started
 
+Clicking the **Build** button above will bootstrap a new free cloud hosted store provisioned specifically for this app. Once that's done you can either run this app locally or on Vercel!
+
 1. Clone this Repo:
 ```bash setup Clone the Repo
 git clone https://github.com/StatelyCloud/statelytv-demo
@@ -41,6 +43,8 @@ npm run dev
 5. Open [http://localhost:8300](http://localhost:8300) to see the app
 
 6. Bootstrap demo data when prompted (or visit `/admin/bootstrap`)
+
+*See the [Deploy](#deploy) section for how to host this app on Vercel*
 
 ## Exploring the Demo
 
@@ -81,6 +85,10 @@ Try different scenarios:
 - `lib/actions.ts` - Server actions for StatelyDB operations
 - `app/admin/page.tsx` - Admin dashboard for CRUD operations
 - `app/page.tsx` - Main browsing interface
+
+## Deploy
+After you've successfully setup your StatelyDB Store. You can deploy this application to Vercel.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FStatelyCloud%2Fstatelytv-demo&env=STATELY_STORE_ID,STATELY_ACCESS_KEY&envDescription=API%20keys%20and%20Store%20configuration.&envLink=https%3A%2F%2Fdocs.stately.cloud%2Fguides%2Fconnect%2F&skippable-integrations=1)
 
 ## Learn More
 
