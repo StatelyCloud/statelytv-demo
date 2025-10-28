@@ -2,7 +2,7 @@
 
 A hands-on teaching application demonstrating [StatelyDB](https://stately.cloud) concepts through a Netflix-style streaming platform. Explore channels, shows, and characters while learning how StatelyDB's elastic schema and access patterns work in practice.
 
-[![Build with Stately](https://gist.githubusercontent.com/ryan-stately/51a07a4b3123f5cb89c8b9a1f3edf214/raw/158cb441aa65d05dd1a75b85dffad2feeb473f6b/build-icon.svg)](https://console.stately.cloud/new?repo=https%3A%2F%2Fgithub.com%2FStatelyCloud%2Fstatelytv-demo)
+[![Build with Stately](https://console.stately.cloud/button.svg)](https://console.stately.cloud/new?repo=https%3A%2F%2Fgithub.com%2FStatelyCloud%2Fstatelytv-demo)
 
 ## What You'll Learn
 
