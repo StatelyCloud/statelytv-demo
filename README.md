@@ -44,7 +44,15 @@ npm run dev
 
 6. Bootstrap demo data when prompted (or visit `/admin/bootstrap`)
 
-*See the [Deploy](#deploy) section for how to host this app on Vercel*
+## Deploy
+After you've successfully setup your StatelyDB Store. You can deploy this application to Vercel.
+
+>Before clicking Deploy, make note of the `STATELY_STORE_ID` and `STATELY_ACCESS_KEY` provisioned above by using [our console](https://console.stately.cloud). You will be asked to provide them.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FStatelyCloud%2Fstatelytv-demo&env=STATELY_STORE_ID,STATELY_ACCESS_KEY&envDescription=API%20keys%20and%20Store%20configuration.&envLink=https%3A%2F%2Fdocs.stately.cloud%2Fguides%2Fconnect%2F&skippable-integrations=1)
+
+
+After Vercel has cloned this repo, you **must** repeate the steps above to generating the SDK in your new repo, and then push those changes.
 
 ## Exploring the Demo
 
@@ -85,10 +93,6 @@ Try different scenarios:
 - `lib/actions.ts` - Server actions for StatelyDB operations
 - `app/admin/page.tsx` - Admin dashboard for CRUD operations
 - `app/page.tsx` - Main browsing interface
-
-## Deploy
-After you've successfully setup your StatelyDB Store. You can deploy this application to Vercel.
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FStatelyCloud%2Fstatelytv-demo&env=STATELY_STORE_ID,STATELY_ACCESS_KEY&envDescription=API%20keys%20and%20Store%20configuration.&envLink=https%3A%2F%2Fdocs.stately.cloud%2Fguides%2Fconnect%2F&skippable-integrations=1)
 
 ## Learn More
 
